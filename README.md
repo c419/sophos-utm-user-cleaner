@@ -3,7 +3,7 @@
 This program is used for bulk user deletion in Sophos UTM. Sophos UTM lacks features of unused users provisioning and in the same time it is easy to flood system with hundreds or thousands users and corresponding network definitions. It is designed to be safe - it skips deletion of any users or networks that is used somewhere in UTM configuration. This script is intended to be run on Sophos UTM console with root priviledges.
 
 ## Installing
-curl -O https://raw.githubusercontent.com/c419/sophos-utm-user-cleaner/master/suuc.py
+`curl -O https://raw.githubusercontent.com/c419/sophos-utm-user-cleaner/master/suuc.py`
 or
 scp suuc.py into /root/ on your Sophos UTM
 
