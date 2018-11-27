@@ -12,7 +12,6 @@ scp suuc.py into /root/ on your Sophos UTM
 
 
 `python suuc.py (--list_all|--list_unused|--examine|--delete) [user_list_file]`
-
                 --list_all 
                     Lists all user objects.
                 --list_unused
@@ -21,9 +20,7 @@ scp suuc.py into /root/ on your Sophos UTM
                     Reads list of users from file(one username per line) or from STDIN. Writes usage information for each user to Log file.
                 --delete
                     Reads list of users from file(one username per line) or from STDIN. Deletes user and corresponding network object if they are unused in UTM, skips otherwise. Writes information to Log file.
-
-                Log file suuc.log is located in the same directory.
-
+                Log file suuc.log will be created in the same directory.
                 To remove all unused users with one command you can use: `python suuc.py --list_unused | python suuc.py --delete`
 
         
