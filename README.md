@@ -1,16 +1,16 @@
-###Sophos UTM user cleaner
+### Sophos UTM user cleaner
 
 This program is used for bulk user deletion in Sophos UTM. Sophos UTM lacks features of unused users provisioning and in the same time it is easy to flood system with hundreds or thousands users and corresponding network definitions. It is designed to be safe - it skips deletion of any users or networks that is used somewhere in UTM configuration. This script is intended to be run on Sophos UTM console with root priviledges.
 
-##Installing
+## Installing
 curl ...
 scp suuc.py into /root/ on Sophos UTM
 
 
-##Usage 
+## Usage 
 
 
-python suuc.py (--list_all|--list_unused|--examine|--delete) [user_list_file]
+`python suuc.py (--list_all|--list_unused|--examine|--delete) [user_list_file]`
 
                 --list_all 
                     Lists all user objects.
@@ -23,6 +23,6 @@ python suuc.py (--list_all|--list_unused|--examine|--delete) [user_list_file]
 
                 Log file suuc.log is located in the same directory.
 
-                To remove all unused users with one command you can use: python suuc.py --list_unused | python suuc.py --delete
+                To remove all unused users with one command you can use: `python suuc.py --list_unused | python suuc.py --delete`
 
         
